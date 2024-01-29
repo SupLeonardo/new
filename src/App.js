@@ -19,27 +19,33 @@ function App() {
   
    
   return (
-    <div className='flex justify-center items-end h-[100%] w-[100%]'>
-      <div className=" bg-slate-500 h-[71vh] w-full md:h-[40vh] grid rounded-lg grid-rows-4 grid-cols-4">
-        <LButton text=''></LButton>
-        <LButton text=''></LButton>
-        <LButton text=''></LButton>
-        <LButton text=''></LButton>
+    <div className='flex flex-col justify-center items-end h-[100%] w-[100%]'>
+      <div className="grow"></div>
+      <div className="md:bg-slate-500 h-[calc(100dvh)] w-full md:h-[40vh] flex flex-col justify-center rounded-lg items-end grid-rows-4 grid-cols-4">
+        <div className="w-full flex justify-center"><LButton text='C'></LButton>
+        <LButton text='%'></LButton>
+        <LButton text='<'></LButton>
+        <LButton text='/'></LButton></div>
 
-        <MButton text='1'></MButton>
-        <MButton text='2'></MButton>
-        <MButton text='3'></MButton>
-        <LButton text=''></LButton>
-
-        <MButton text='4'></MButton>
-        <MButton text='5'></MButton>
-        <MButton text='6'></MButton>
-        <LButton text=''></LButton>
-
-        <MButton text='7'></MButton>
+        <div className="w-full flex justify-center"><MButton text='7'></MButton>
         <MButton text='8'></MButton>
         <MButton text='9'></MButton>
-        <LButton text=''></LButton>
+        <LButton text='X'></LButton></div>
+
+        <div className="w-full flex justify-center"><MButton text='4'></MButton>
+        <MButton text='5'></MButton>
+        <MButton text='6'></MButton>
+        <LButton text='-'></LButton></div>
+
+        <div className="w-full flex justify-center"><MButton text='1'></MButton>
+        <MButton text='2'></MButton>
+        <MButton text='3'></MButton>
+        <LButton text='+'></LButton></div>
+
+        <div className="w-full flex justify-center"><MButton text='0'></MButton>
+        <MButton text='00'></MButton>
+        <MButton text=','></MButton>
+        <LButton text='='></LButton></div>
       </div>  
     </div>
   )

@@ -6,7 +6,7 @@ const MButton = ({text}) => {
 
     
     return (
-        <button className="bg-[#3a59e2] text-white rounded-lg h-40 my-1 w-[100px] active:bg-[#1e2442]">
+        <button className="bg-[#3a59e2] text-white rounded-2xl h-34 my-1 w-[10vh] mx-1 active:bg-[#1e2442]">
             {text}
         </button>
     )
