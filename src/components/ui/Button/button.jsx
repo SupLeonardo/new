@@ -1,11 +1,14 @@
 import React from "react";
 
-const Button = ({text, setText}) => {
+const Button = ({text, setText, cls}) => {
     const click = () => {
-        setText(text)
+        if (text=='C') {
+            setText("")
+        }
     }
+    let f = '  font-bold text-white text-lg rounded-full h-[10vh] w-[10vh] my-1 mx-1 ' + cls
     return(
-        <button onClick={click} className={' bg-emerald-700 font-bold text-white text-lg rounded-full h-[10vh] w-[10vh] my-1 mx-1 active:bg-emerald-500'}>
+        <button onClick={click} className={f}>
             {text}
         </button>
         
