@@ -13,22 +13,22 @@ function App() {
   // for controlled element
   
   let exist = ''
-  const [text, setText] = useState('')
-  const handleChange = (text, exist) => {
+  const [text, setText] = useState('0')
+  const handleChange = (text) => {
     setText(text)
   }
   
    
   return (
     <div className='flex flex-col justify-center items-end h-[100%] w-[100%]'>
-      <div className="grow h-[100%] w-[100%] flex items-end justify-end font-semibold text-[70px] text-white px-[3vh] py-4">
-        <h1 className="">{text}</h1>
+      <div className="grow h-[100%] w-[100%] sm:my-5 sm:h-[80vh] flex items-end justify-end sm:mr-[25.3rem] font-semibold text-[70px] text-white px-[3vh] py-4">
+        <h1 className="sm:text-8xl sm:mr-[21.5rem] sm:mb-4">{text}</h1>
       </div>
-      <div className=" h-[calc(100dvh)] w-full md:h-[40vh] flex flex-col p-2 justify-center rounded-lg items-end grid-rows-4 grid-cols-4">
+      <div className=" h-[calc(100dvh)] w-full sm:h-[40vh] sm:mb-[10rem] sm:mt-10 flex flex-col p-2 justify-center rounded-lg items-end grid-rows-4 grid-cols-4">
         <div className="w-full flex justify-center">
         <Button cls='active:bg-sky-500 bg-sky-900' setText={handleChange} text='C'/>
         <Button cls='active:bg-sky-500 bg-sky-900' text='%'/>
-        <Button cls='active:bg-sky-500 bg-sky-900' text='<='/>
+        <Button cls='active:bg-sky-500 bg-sky-900' text='⌫'/>
         <Button cls='active:bg-sky-500 bg-sky-900' text='/'/></div>
 
         <div className="w-full flex justify-center">
